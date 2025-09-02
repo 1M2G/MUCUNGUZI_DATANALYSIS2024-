@@ -1,0 +1,16 @@
+def sugar_level_calculator():
+    # Ask the user for input
+    sugar_level = float(input("Enter your blood sugar level (mg/dL): "))
+
+    # Check ranges and classify
+    if sugar_level < 70:
+        print("Low Blood Sugar (Hypoglycemia)")
+    elif 70 <= sugar_level <= 99:
+        print("Normal Blood Sugar")
+    elif 100 <= sugar_level <= 125:
+        print("Pre-diabetes (High Risk)")
+    elif sugar_level >= 126:
+        print("Diabetes (High Blood Sugar)")
+
+# Run the calculator
+sugar_level_calculator()
